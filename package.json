@@ -1,0 +1,23 @@
+{
+  "name": "travel-tour-web",
+  "version": "1.0.0",
+  "description": "Download npm packages for travel-tour-web",
+  "homepage": "https://github.com/Hamid-Khanbeyki/Travel-Tour-Web#readme",
+  "bugs": {
+    "url": "https://github.com/Hamid-Khanbeyki/Travel-Tour-Web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamid-Khanbeyki/Travel-Tour-Web.git"
+  },
+  "license": "ISC",
+  "author": "Hamid",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
