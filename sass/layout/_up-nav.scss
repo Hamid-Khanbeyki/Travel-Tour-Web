@@ -1,0 +1,45 @@
+@use "../utils/variables" as *;
+
+.up-nav {
+  width: 100%;
+  // background-color: $color-gray-2;
+  background-color: rgba(0, 117, 0, 0.637);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0rem 12.5rem;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    &:not(:last-child) {
+      margin-right: 3.3rem;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    padding-top: 0.4rem;
+    font-size: 1.8rem;
+    color: $color-black;
+    color: $color-white;
+  }
+
+  &__icon-fix {
+    display: inline-block;
+    padding-top: 0.7rem;
+    font-size: 2.2rem;
+    color: $color-black;
+    color: $color-white;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: $color-text-2;
+    color: $color-white;
+  }
+}
