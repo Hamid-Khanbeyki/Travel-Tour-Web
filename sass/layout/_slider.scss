@@ -42,4 +42,9 @@
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
+
+  &.active {
+    background: white;
+    transform: scale(1.2);
+  }
 }
