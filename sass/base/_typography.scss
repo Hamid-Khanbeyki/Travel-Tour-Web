@@ -8,3 +8,21 @@ body {
   font-family: "poppins", sans-serif;
   color: $color-text;
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.heading-tertiary {
+  font-size: 1.5rem;
+  color: $color-text;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
