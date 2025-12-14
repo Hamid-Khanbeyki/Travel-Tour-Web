@@ -26,14 +26,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 12.5rem;
+  padding: 1rem 12.5rem;
   background-color: $color-white;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.08);
   transition: all 0.3s ease;
 
   &__icon {
-    font-size: 2.5rem;
-    font-weight: 200;
+    cursor: pointer;
+    width: 6rem;
+    display: inline-block;
   }
 
   &__list {
