@@ -12,5 +12,17 @@
     border-radius: 2.5rem;
     padding: 1rem 3.2rem;
     margin-left: 3rem;
+    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.1);
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.15);
   }
 }
