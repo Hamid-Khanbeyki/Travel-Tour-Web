@@ -35,7 +35,11 @@
 
   &__icon {
     font-size: 4.5rem;
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light,
+      $color-primary-dark
+    );
     color: transparent;
     -webkit-background-clip: text;
     font-weight: 900;

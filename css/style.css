@@ -22,7 +22,7 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  background-image: linear-gradient(to right bottom, #386641, #a7c957);
   color: transparent;
   -webkit-background-clip: text;
   text-align: center;
@@ -82,7 +82,7 @@ body {
 }
 .features__icon {
   font-size: 4.5rem;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  background-image: linear-gradient(to right bottom, #a7c957, #386641);
   color: transparent;
   -webkit-background-clip: text;
   font-weight: 900;
@@ -160,7 +160,7 @@ body {
 .nav__btn:link, .nav__btn:visited {
   display: inline-block;
   color: #fff;
-  background-color: rgba(0, 117, 0, 0.637);
+  background-color: #6a994e;
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 300;
@@ -214,7 +214,7 @@ body {
 
 .up-nav {
   width: 100%;
-  background-color: rgba(0, 117, 0, 0.637);
+  background-color: #6a994e;
   display: flex;
   align-items: center;
   justify-content: flex-end;
