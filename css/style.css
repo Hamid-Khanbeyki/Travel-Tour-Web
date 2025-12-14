@@ -192,6 +192,16 @@ body {
   background-color: #fff;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  position: relative;
+}
+.nav__underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #00bcd4;
+  width: 0;
+  left: 0;
+  transition: transform 0.35s ease, width 0.35s ease;
 }
 .nav__icon {
   cursor: pointer;
@@ -212,6 +222,10 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   color: #444;
+  padding-bottom: 0.5rem;
+}
+.nav__link.active {
+  border-bottom: 2px solid #00b4d8;
 }
 
 .slider {

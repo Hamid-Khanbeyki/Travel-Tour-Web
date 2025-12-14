@@ -53,3 +53,28 @@ function goToSlide(index) {
   clearInterval(slideInterval);
   slideInterval = setInterval(nextSlide, 5000);
 }
+
+//BORDER-BOTTOM FOR LINKS ON NAV
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav__link");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navLinks.forEach((link) => link.classList.remove("active"));
+
+        const activeLink = document.querySelector(
+          `.nav__link[href="#${entry.target.id}"]`
+        );
+        if (activeLink) activeLink.classList.add("active");
+      }
+    });
+  },
+  {
+    threshold: 0.6, // section must be ~60% visible
+  }
+);
+
+sections.forEach((section) => observer.observe(section));
