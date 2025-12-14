@@ -104,8 +104,23 @@ body {
   justify-content: center;
   gap: 5rem;
 }
-.payments__image {
-  width: 8rem;
+.payments__image--1 {
+  width: 7rem;
+}
+.payments__image--2 {
+  width: 7rem;
+}
+.payments__image--3 {
+  width: 9rem;
+}
+.payments__image--4 {
+  width: 9rem;
+}
+.payments__image--5 {
+  width: 5rem;
+}
+.payments__image--6 {
+  width: 7rem;
 }
 
 #mainNav {

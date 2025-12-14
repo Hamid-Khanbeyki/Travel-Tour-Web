@@ -64,7 +64,31 @@
     gap: 5rem;
   }
 
-  &__image {
-    width: 8rem;
+  // &__image {
+  //   width: $mid-font-size;
+  // }
+
+  &__image--1 {
+    width: $mid-font-size;
+  }
+
+  &__image--2 {
+    width: $mid-font-size;
+  }
+
+  &__image--3 {
+    width: $big-font-size;
+  }
+
+  &__image--4 {
+    width: $big-font-size;
+  }
+
+  &__image--5 {
+    width: $small-font-size;
+  }
+
+  &__image--6 {
+    width: $mid-font-size;
   }
 }
