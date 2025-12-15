@@ -231,7 +231,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 12.5rem;
+  padding: 1.2rem 12.5rem;
   background-color: #fff;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
@@ -248,7 +248,7 @@ body {
 }
 .nav__icon {
   cursor: pointer;
-  width: 6rem;
+  width: 12.5rem;
   display: inline-block;
 }
 .nav__list {
