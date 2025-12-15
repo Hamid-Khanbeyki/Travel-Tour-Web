@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
   height: 80vh;
-  overflow: hidden;
+  backface-visibility: hidden;
 
   &::after {
     content: "You can find the best";
@@ -20,10 +20,17 @@
     text-transform: uppercase;
     letter-spacing: 0.4rem;
     color: $color-white;
+
+    animation-name: left-to-right;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
   }
 }
 
 .slides {
+  backface-visibility: hidden;
+
   &::after {
     content: "Tours with us";
     display: inline-block;
@@ -36,6 +43,11 @@
     text-transform: uppercase;
     letter-spacing: 0.4rem;
     color: $color-white;
+
+    animation-name: right-to-left;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
   }
 
   img {
