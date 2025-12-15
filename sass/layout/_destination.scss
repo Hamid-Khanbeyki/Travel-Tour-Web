@@ -1,1 +1,56 @@
 @use "../utils/" as *;
+
+.destinations {
+  width: 100%;
+  height: 100vh;
+  background-color: $color-gray;
+  padding: 10rem 12.5rem;
+
+  &__shape:hover &__text {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+  }
+
+  &__shape {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50rem;
+    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.2);
+    overflow: hidden;
+  }
+
+  &__image {
+    cursor: zoom-in;
+    width: 100%;
+    height: 100%;
+    border-radius: 50rem;
+    transition: all 0.4s;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.15);
+      filter: brightness(60%) blur(0.1rem);
+    }
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: $color-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.5rem 0;
+  }
+}
