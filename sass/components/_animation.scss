@@ -1,1 +1,35 @@
 @use "../utils/" as *;
+
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translate(-35%, -90%);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translate(-55%, -90%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -90%);
+  }
+}
+
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translate(-75%, -10%);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translate(-45%, -10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -10%);
+  }
+}
