@@ -277,7 +277,33 @@ body {
   height: 80vh;
   overflow: hidden;
 }
+.slider::after {
+  content: "You can find the best";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: #fff;
+}
 
+.slides::after {
+  content: "Tours with us";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: #fff;
+}
 .slides img {
   width: 100%;
   height: 100%;
