@@ -319,6 +319,7 @@ body {
   transform: skewY(-4deg);
   margin-top: -5rem;
   padding: 7rem 12.5rem;
+  text-align: center;
 }
 .popular__box {
   display: flex;
@@ -389,6 +390,16 @@ body {
   background-position: center;
   backface-visibility: hidden;
   overflow: hidden;
+}
+.popular__list {
+  list-style: none;
+  padding: 1rem 4rem;
+}
+.popular__item {
+  border-bottom: 1px solid #90e0ef;
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .slider {

@@ -15,6 +15,7 @@
   transform: skewY(-4deg);
   margin-top: -5rem;
   padding: 7rem 12.5rem;
+  text-align: center;
 
   &__box {
     display: flex;
@@ -112,5 +113,17 @@
     background-position: center;
     backface-visibility: hidden;
     overflow: hidden;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 1rem 4rem;
+  }
+
+  &__item {
+    border-bottom: 1px solid $color-primary-light;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    font-weight: 700;
   }
 }
