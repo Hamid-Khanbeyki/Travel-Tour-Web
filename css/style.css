@@ -329,20 +329,22 @@ body {
 }
 .popular__card {
   width: 25rem;
-  height: 35rem;
+  height: 37rem;
   background-color: #fff;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2rem 1.5rem rgba(0, 0, 0, 0.1);
   position: relative;
+  transition: all 0.3s ease;
 }
 .popular__card:hover .heading-secondary--white {
+  font-size: 3rem;
   transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
 }
 .popular__card .heading-secondary--white {
-  font-size: 3rem;
+  font-size: 2rem;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -400,6 +402,14 @@ body {
   padding: 0.7rem 0;
   font-size: 1rem;
   font-weight: 700;
+}
+.popular__btn-box {
+  padding: 1.5rem 0 0 0;
+}
+.popular__btn-box .btn--blue {
+  font-size: 1.2rem;
+  margin-left: 0;
+  padding: 1rem 2.5rem;
 }
 
 .slider {
