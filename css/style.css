@@ -29,6 +29,16 @@ body {
   margin-bottom: 7rem;
 }
 
+.heading-secondary--white {
+  font-size: 3.5rem;
+  background-image: linear-gradient(to right bottom, #fff, #f7f7f7);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin-bottom: 7rem;
+  transform: skewY(4deg);
+}
+
 .heading-tertiary {
   font-size: 1.5rem;
   color: #444;
@@ -308,6 +318,7 @@ body {
   background-repeat: no-repeat;
   transform: skewY(-4deg);
   margin-top: -5rem;
+  padding: 7.5rem 12.5rem;
 }
 
 .slider {

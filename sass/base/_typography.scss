@@ -22,6 +22,16 @@ body {
   margin-bottom: 7rem;
 }
 
+.heading-secondary--white {
+  font-size: 3.5rem;
+  background-image: linear-gradient(to right bottom, $color-white, $color-gray);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin-bottom: 7rem;
+  transform: skewY(4deg);
+}
+
 .heading-tertiary {
   font-size: 1.5rem;
   color: $color-text;
