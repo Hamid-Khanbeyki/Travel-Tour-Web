@@ -79,6 +79,7 @@ const observer = new IntersectionObserver(
 
 sections.forEach((section) => observer.observe(section));
 
+// SHOW AND FADE EFFECT FOR ELEMENTS
 const observe = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
