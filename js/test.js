@@ -93,3 +93,9 @@ const observe = new IntersectionObserver((entries) => {
 
 const hiddenElemebt = document.querySelectorAll(".hidden");
 hiddenElemebt.forEach((el) => observe.observe(el));
+
+//SHOW AND HIDE PASSWORD ON PASSWORD FOR INPUT
+function togglePassword() {
+  const input = document.getElementById("password");
+  input.type = input.type === "password" ? "text" : "password";
+}
