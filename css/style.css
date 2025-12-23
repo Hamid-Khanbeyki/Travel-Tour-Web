@@ -22,7 +22,7 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
-  background-image: linear-gradient(to right bottom, #0096c7, #90e0ef);
+  background-image: linear-gradient(to right bottom, #90e0ef, #0096c7);
   color: transparent;
   -webkit-background-clip: text;
   text-align: center;
@@ -289,6 +289,165 @@ body {
   width: 7rem;
 }
 
+.form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.form:target {
+  opacity: 1;
+  visibility: visible;
+}
+.form__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%) scale(0);
+  width: 40rem;
+  height: 55rem;
+  background-color: #fff;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s 0.2s;
+  position: relative;
+  padding: 2rem 4rem 0 4rem;
+}
+.form__content-login {
+  display: none;
+  opacity: 0;
+  visibility: visible;
+}
+.form .heading-secondary {
+  margin: 1rem 0 2rem 0;
+}
+.form__close {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+.form:target .form__content {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -48%) scale(1);
+}
+.form__group {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.form__field {
+  margin-bottom: 14px;
+  position: relative;
+}
+.form__field input {
+  color: #444;
+  width: 100%;
+  padding: 14px 44px 14px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form__field input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 0.5rem #00b4d8;
+}
+.form__field select {
+  color: #444;
+  width: 100%;
+  padding: 14px 44px 14px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form__field select:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 0.5rem #00b4d8;
+}
+.form__icon-btn {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #00b4d8;
+}
+.form__btn {
+  width: 100%;
+  margin-top: 6px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to right bottom, #90e0ef, #0096c7);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form__btn:active {
+  transform: translateY(0.3rem);
+}
+.form__login {
+  margin: 1.4rem 0 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #444;
+}
+.form__login a {
+  color: #00b4d8;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 0.3rem;
+}
+.form__login a:hover, .form__login a:active {
+  border-bottom: 1px solid #00b4d8;
+}
+.form__or {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0;
+  color: #444;
+  font-size: 12px;
+}
+.form__or::before, .form__or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.form__google {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: 0.15rem solid #eee;
+  background: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
 #mainNav {
   position: relative;
   transition: transform 0.3s ease;
@@ -384,10 +543,6 @@ body {
   box-shadow: 0 2rem 1.5rem rgba(0, 0, 0, 0.1);
   position: relative;
   transition: all 0.3s ease;
-}
-.popular__card:hover {
-  transform: translateY(2.2rem) scale(1.05);
-  box-shadow: 0 2rem 7.5rem rgba(0, 0, 0, 0.1);
 }
 .popular__card:hover .heading-secondary--white {
   font-size: 3rem;
