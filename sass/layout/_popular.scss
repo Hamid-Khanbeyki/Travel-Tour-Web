@@ -38,11 +38,6 @@
     position: relative;
     transition: all 0.3s ease;
 
-    &:hover {
-      transform: translateY(2.2rem) scale(1.05);
-      box-shadow: 0 2rem 7.5rem rgba($color-black, 0.1);
-    }
-
     &:hover .heading-secondary--white {
       font-size: 3rem;
       transform: translate(-50%, -50%);
