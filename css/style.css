@@ -811,22 +811,87 @@ body {
   text-decoration: none;
   padding: 1.5rem 4rem;
   border-radius: 5rem;
+  transition: all 0.4s;
 }
 .tours__btn--spring {
   color: #fff;
   background-image: linear-gradient(to right bottom, #ffe5ec, #fb6f92);
 }
+.tours__btn--spring::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5rem;
+  background-image: linear-gradient(to right bottom, #ffe5ec, #fb6f92);
+  z-index: -1;
+  transition: all 0.4s;
+}
 .tours__btn--summer {
   color: #fff;
   background-image: linear-gradient(to right bottom, #d8f3dc, #52b788);
+}
+.tours__btn--summer::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5rem;
+  background-image: linear-gradient(to right bottom, #d8f3dc, #52b788);
+  z-index: -1;
+  transition: all 0.4s;
 }
 .tours__btn--fall {
   color: #fff;
   background-image: linear-gradient(to right bottom, #ffe7ac, #e85d04);
 }
+.tours__btn--fall::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5rem;
+  background-image: linear-gradient(to right bottom, #ffe7ac, #e85d04);
+  z-index: -1;
+  transition: all 0.4s;
+}
 .tours__btn--winter {
   color: #fff;
   background-image: linear-gradient(to right bottom, #90e0ef, #0096c7);
+}
+.tours__btn--winter::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5rem;
+  background-image: linear-gradient(to right bottom, #90e0ef, #0096c7);
+  z-index: -1;
+  transition: all 0.4s;
+}
+.tours__btn:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+.tours__btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.tours__btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
 }
 .tours__image-box {
   display: inline-block;
