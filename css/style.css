@@ -769,28 +769,64 @@ body {
 }
 .tours__heading {
   display: inline-block;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.tours__heading--spring {
+  background-image: linear-gradient(to right bottom, #ffe5ec, #fb6f92);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.tours__heading--summer {
+  background-image: linear-gradient(to right bottom, #d8f3dc, #52b788);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.tours__heading--fall {
+  background-image: linear-gradient(to right bottom, #ffe7ac, #e85d04);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.tours__heading--winter {
   background-image: linear-gradient(to right bottom, #90e0ef, #0096c7);
   color: transparent;
   -webkit-background-clip: text;
-  font-size: 4rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
 }
 .tours__text {
   font-size: 1.2rem;
   width: 60rem;
-  margin-bottom: 4rem;
   line-height: 1.9;
   color: #666;
+}
+.tours__text:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.tours__btn-box {
+  margin-top: 4rem;
 }
 .tours__btn:link, .tours__btn:visited {
   display: inline-block;
   font-size: 1.4rem;
   text-decoration: none;
-  color: #444;
-  background-image: linear-gradient(to right bottom, #90e0ef, #0096c7);
-  padding: 1rem 3rem;
+  padding: 1.5rem 4rem;
   border-radius: 5rem;
+}
+.tours__btn--spring {
+  color: #fff;
+  background-image: linear-gradient(to right bottom, #ffe5ec, #fb6f92);
+}
+.tours__btn--summer {
+  color: #fff;
+  background-image: linear-gradient(to right bottom, #d8f3dc, #52b788);
+}
+.tours__btn--fall {
+  color: #fff;
+  background-image: linear-gradient(to right bottom, #ffe7ac, #e85d04);
+}
+.tours__btn--winter {
+  color: #fff;
+  background-image: linear-gradient(to right bottom, #90e0ef, #0096c7);
 }
 .tours__image-box {
   display: inline-block;

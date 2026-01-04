@@ -29,27 +29,64 @@
 
   &__heading {
     display: inline-block;
-    background-image: linear-gradient(
-      to right bottom,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    color: transparent;
-    -webkit-background-clip: text;
+
     font-size: 4rem;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+
+    &--spring {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-pink-light,
+        $color-pink-dark
+      );
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    &--summer {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-green-light,
+        $color-green-dark
+      );
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    &--fall {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-orange-light,
+        $color-orange-dark
+      );
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    &--winter {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      );
+      color: transparent;
+      -webkit-background-clip: text;
+    }
   }
 
   &__text {
     font-size: 1.2rem;
     width: 60rem;
-    margin-bottom: 4rem;
     line-height: 1.9;
     color: $color-text-2;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__btn-box {
+    margin-top: 4rem;
   }
 
   &__btn {
@@ -58,14 +95,45 @@
       display: inline-block;
       font-size: 1.4rem;
       text-decoration: none;
-      color: $color-text;
+
+      padding: 1.5rem 4rem;
+      border-radius: 5rem;
+    }
+
+    &--spring {
+      color: $color-white;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-pink-light,
+        $color-pink-dark
+      );
+    }
+
+    &--summer {
+      color: $color-white;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-green-light,
+        $color-green-dark
+      );
+    }
+
+    &--fall {
+      color: $color-white;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-orange-light,
+        $color-orange-dark
+      );
+    }
+
+    &--winter {
+      color: $color-white;
       background-image: linear-gradient(
         to right bottom,
         $color-primary-light,
         $color-primary-dark
       );
-      padding: 1rem 3rem;
-      border-radius: 5rem;
     }
   }
 
