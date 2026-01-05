@@ -1,0 +1,92 @@
+@use "../utils/" as *;
+
+.about {
+  width: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-blue-light,
+    $color-blue-dark
+  );
+
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+    padding: 8rem 12.5rem;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 30rem;
+    height: 45rem;
+    background-image: url(../img/People-on-travel.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    span {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5rem;
+      letter-spacing: 0.8rem;
+      font-weight: 700;
+      color: $color-blue-light;
+    }
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  &__text-box {
+    display: inline-block;
+    background-color: $color-blue-dark;
+    color: $color-white;
+    padding: 2rem 6rem;
+    height: 45rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    width: 70rem;
+    line-height: 1.9;
+    color: rgba($color-white, 0.8);
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__list {
+    line-height: 2;
+    padding: 1rem 0 0 1.5rem;
+    color: rgba($color-white, 0.8);
+  }
+
+  &__item {
+    font-size: 1.2rem;
+  }
+
+  &__btn {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: rgba($color-white, 0.8);
+      background-color: $color-blue-light;
+      padding: 1.2rem 3.5rem;
+      margin-top: 2.5rem;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      background-color: rgba($color-blue-light, 0.5);
+    }
+  }
+}
