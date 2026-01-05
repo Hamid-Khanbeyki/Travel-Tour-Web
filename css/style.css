@@ -161,9 +161,81 @@ body {
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
 }
 
+.about {
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #014f86, #012a4a);
+}
+.about__box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+  padding: 8rem 12.5rem;
+}
+.about__image {
+  display: inline-block;
+  width: 30rem;
+  height: 45rem;
+  background-image: url(../img/People-on-travel.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.about__image span {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  letter-spacing: 0.8rem;
+  font-weight: 700;
+  color: #014f86;
+}
+.about__heading {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.about__text-box {
+  display: inline-block;
+  background-color: #012a4a;
+  color: #fff;
+  padding: 2rem 6rem;
+  height: 45rem;
+}
+.about__text {
+  font-size: 1.2rem;
+  width: 70rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.8);
+}
+.about__text:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.about__list {
+  line-height: 2;
+  padding: 1rem 0 0 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.about__item {
+  font-size: 1.2rem;
+}
+.about__btn:link, .about__btn:visited {
+  display: inline-block;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #014f86;
+  padding: 1.2rem 3.5rem;
+  margin-top: 2.5rem;
+  transition: all 0.2s;
+}
+.about__btn:hover, .about__btn:active {
+  background-color: rgba(1, 79, 134, 0.5);
+}
+
 .container {
   width: 100%;
-  height: 100vh;
   background-color: #f7f7f7;
 }
 
@@ -745,7 +817,7 @@ body {
 
 .tours {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #f7f7f7;
   margin-top: -5rem;
   padding: 20rem 0;
